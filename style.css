@@ -1,0 +1,113 @@
+
+* { box-sizing: border-box; }
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: sans-serif;
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#videoBox {
+  width: 360px;
+  height: 640px;
+  background: #111;
+  border: 8px solid #333;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+}
+.left-align {
+  align-items: flex-start;
+  text-align: left;
+}
+#ringingSVG {
+  animation: pulse 1.5s infinite;
+  margin-bottom: 10px;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+.button {
+  background: #1e90ff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#popup {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+}
+#popup h1 { color: red; margin-bottom: 1rem; }
+#completion {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out;
+  flex-grow: 1;
+}
+#completion svg {
+  width: 80px;
+  height: 80px;
+  stroke: limegreen;
+  stroke-width: 6;
+  fill: none;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: drawCheck 1s forwards;
+}
+@keyframes drawCheck {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+#volumeControl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+#volumeControl input[type="range"] {
+  width: 100px;
+  height: 4px;
+  accent-color: #1e90ff;
+  cursor: pointer;
+}
+#volumeIcon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  user-select: none;
+}
