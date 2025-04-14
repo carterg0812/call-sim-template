@@ -1,0 +1,134 @@
+<script soundPath="https://videos.lightspeedvt.com/video_files/ram/firephone_2011/101/" timer="120" showAnswers="false" callType="Birthday/Anniversary">
+
+<statement>
+<role>Customer</role>
+<caption>Hello?</caption>
+<sound>$[soundPath]aram_fp_101_cust_01.mp3</sound>
+</statement>
+
+<prompt>
+<answer>B</answer>
+<timer>$[timer]</timer>
+<response>
+<id>A</id>
+<caption>Hello, did I catch you at a bad time?</caption>
+<sound>$[soundPath]aram_fp_101_sales_01d.mp3</sound>
+</response>
+<response>
+<id>B</id>
+<caption>Hello Mr. Jacobs? Did I catch you at a bad time?</caption>
+<sound>$[soundPath]aram_fp_101_sales_01b.mp3</sound>
+</response>
+<response>
+<id>C</id>
+<caption>Hello, Mr. Jacobs, this is Samantha from ABC Motors and the reason I am calling is to wish you a happy birthday!</caption>
+<sound>$[soundPath]aram_fp_101_sales_01c.mp3</sound>
+</response>
+<response>
+<id>D</id>
+<caption>Hello Mr. Jacobs, This is Samantha with ABC motors and my computer told me to call you as it looks like today is your birthday!</caption>
+<sound>$[soundPath]aram_fp_101_sales_01a.mp3</sound>
+</response>
+</prompt>
+
+<statement>
+		<role>Customer</role>
+		<caption>No, this is fine.</caption>
+		<sound>$[soundPath]aram_fp_101_cust_01.mp3</sound>
+	</statement>
+	
+	<prompt>
+		<answer>B</answer>
+		<timer>$[timer]</timer>
+		<response>
+			<id>A</id>
+			<caption>This is Samantha and the reason I’m calling is I see that your birthday was on Friday so I thought I’d give you a call.</caption>
+			<sound>$[soundPath]aram_fp_101_sales_02a.mp3</sound>
+		</response>
+		<response>
+			<id>B</id>
+			<caption>This is Samantha from ABC Motors. The reason that I am calling is that I see that your birthday is coming up on Friday.</caption>
+			<sound>$[soundPath]aram_fp_101_sales_02b.mp3</sound>
+		</response>
+		<response>
+			<id>C</id>
+			<caption>This is Samantha from ABC Motors and the reason that I am calling is… *Sing “Happy Birthday” song*</caption>
+			<sound>$[soundPath]aram_fp_101_sales_02c.mp3</sound>
+		</response>
+		<response>
+			<id>D</id>
+			<caption>This is Samantha from ABC Motors. The reason that I am calling is that I see that your birthday is today. Is that right?</caption>
+			<sound>$[soundPath]aram_fp_101_sales_02d.mp3</sound>
+		</response>
+	</prompt>
+
+    <statement>
+		<role>Customer</role>
+		<caption>Yes, it is!</caption>
+		<sound>$[soundPath]aram_fp_101_cust_01.mp3</sound>
+	</statement>
+	
+	<prompt>
+		<answer>D</answer>
+		<timer>$[timer]</timer>
+		<response>
+			<id>A</id>
+			<caption>That is great! It just happens to be our biggest sale of the year. I hope you are planning or treating yourself this year because I am sure you deserve it. Would you be interested in a new vehicle for your birthday?</caption>
+			<sound>$[soundPath]aram_fp_101_sales_02a.mp3</sound>
+		</response>
+		<response>
+			<id>B</id>
+			<caption>Great! We at ABC motors wanted to wish you a happy birthday and gift you a great deal on a new vehicle!</caption>
+			<sound>$[soundPath]aram_fp_101_sales_02b.mp3</sound>
+		</response>
+		<response>
+			<id>C</id>
+			<caption>Great, do you have any big plans for your special day?</caption>
+			<sound>$[soundPath]aram_fp_101_sales_02c.mp3</sound>
+		</response>
+		<response>
+			<id>D</id>
+			<caption>I was going to call you on your birthday to congratulate you, but we will be in the middle of one of our biggest sales that I have a lot of my customers coming in for, and I figure if I wait until then it would get lost in the shuffle and I would probably forget.</caption>
+			<sound>$[soundPath]aram_fp_101_sales_02d.mp3</sound>
+		</response>
+	</prompt>
+
+    <statement>
+		<role>Customer</role>
+		<caption>Really? What kind of sale is it?</caption>
+		<sound>$[soundPath]aram_fp_101_cust_01.mp3</sound>
+	</statement>
+	
+	
+	<prompt>
+		<answer>A</answer>
+		<timer>$[timer]</timer>
+		<response>
+			<id>A</id>
+			<caption>Oh, not you too! We are having our memorial day blowout sale. I haven't seen deals like this in a long time. Are you still driving that KIA you purchased?</caption>
+			<sound>$[soundPath]aram_fp_101_sales_02a.mp3</sound>
+		</response>
+		<response>
+			<id>B</id>
+			<caption>Well, that depends on what incentives you qualify for. Are you in the market for a new vehicle?</caption>
+			<sound>$[soundPath]aram_fp_101_sales_02b.mp3</sound>
+		</response>
+		<response>
+			<id>C</id>
+			<caption>Well, interest rates are at all-time lows and can save you a lot of money!</caption>
+			<sound>$[soundPath]aram_fp_101_sales_02c.mp3</sound>
+		</response>
+		<response>
+			<id>D</id>
+			<caption>Great question! What time today can you come in?</caption>
+			<sound>$[soundPath]aram_fp_101_sales_02d.mp3</sound>
+		</response>
+	</prompt>
+
+     <statement>
+		<role>Customer</role>
+		<caption>Yes, I am.</caption>
+		<sound>$[soundPath]aram_fp_101_cust_01.mp3</sound>
+	</statement>
+	
+	</script>
